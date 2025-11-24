@@ -1,0 +1,16 @@
+x = int(input())
+y = int(input())
+
+# Garantir que x seja o menor e y o maior
+if x > y:
+    x, y = y, x   # 1º IF
+
+soma = 0
+atual = x
+
+while atual <= y:  # único WHILE
+    if atual % 13 != 0:   # 2º IF
+        soma += atual
+    atual += 1
+
+print(soma)
